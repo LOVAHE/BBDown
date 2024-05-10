@@ -79,6 +79,7 @@ jobs:
         uses: actions/upload-artifact@v3.1.3
         with:
           name: BBDown_osx-arm64
+          path: artifact-arm64/BBDown
 
   release:
     needs:
@@ -94,4 +95,3 @@ jobs:
         with:
           files: bin/*
           draft: true
-          path: artifact-arm64/BBDown
